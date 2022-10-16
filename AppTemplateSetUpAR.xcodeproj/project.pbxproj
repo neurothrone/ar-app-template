@@ -11,6 +11,7 @@
 		2FF3741D28FBAA8000FE3A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3741C28FBAA8000FE3A39 /* ContentView.swift */; };
 		2FF3741F28FBAA8100FE3A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF3741E28FBAA8100FE3A39 /* Assets.xcassets */; };
 		2FF3742228FBAA8100FE3A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF3742128FBAA8100FE3A39 /* Preview Assets.xcassets */; };
+		2FF3742A28FBBA9A00FE3A39 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF3742928FBBA9A00FE3A39 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF3742A28FBBA9A00FE3A39 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = AppTemplateSetUpAR;
+			packageProductDependencies = (
+				2FF3742928FBBA9A00FE3A39 /* FocusEntity */,
+			);
 			productName = AppTemplateSetUpAR;
 			productReference = 2FF3741728FBAA8000FE3A39 /* AppTemplateSetUpAR.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 2FF3740E28FBAA8000FE3A39;
+			packageReferences = (
+				2FF3742828FBBA9A00FE3A39 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 2FF3741828FBAA8000FE3A39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires the use of your camera to render the augmented reality scene";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires the use of your camera to render the augmented reality scene";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FF3742828FBBA9A00FE3A39 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FF3742928FBBA9A00FE3A39 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF3742828FBBA9A00FE3A39 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FF3740F28FBAA8000FE3A39 /* Project object */;
 }
